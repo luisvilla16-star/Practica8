@@ -68,7 +68,7 @@ public class Utileria implements ElementoDinamico {
      * Ejecuta la acción de usar el objeto
      */
     public void usar(){
-        System.out.println("Usando utilería: " + nombre);
+        System.out.println("Usando utileria: " + nombre);
     }
 
     /**
