@@ -9,17 +9,17 @@ import java.util.List;
 public class Inventario {
 
     /** Capacidad máxima del inventario */
-    private int capacidaMaxima;
+    private int capacidadMaxima;
 
     /** Lista de items almacenados en el inventario */
     private List<Inventariable> items;
 
     /**
      * Constructor de la clase Inventario
-     * @param capacidaMaxima Número máximo de elementos que puede almacenar
+     * @param capacidadMaxima Número máximo de elementos que puede almacenar
      */
-    public Inventario(int capacidaMaxima) {
-        this.capacidaMaxima = capacidaMaxima;
+    public Inventario(int capacidadMaxima) {
+        this.capacidadMaxima = capacidadMaxima;
         this.items = new ArrayList<>();
     }
 
@@ -27,8 +27,8 @@ public class Inventario {
      * Obtiene la capacidad máxima del inventario
      * @return capacidad máxima
      */
-    public int getCapacidaMaxima() {
-        return capacidaMaxima;
+    public int getCapacidadMaxima() {
+        return capacidadMaxima;
     }
 
     /**
@@ -45,7 +45,7 @@ public class Inventario {
      * @return true si se agregó correctamente, false si el inventario está lleno
      */
     public boolean agregarItem(Inventariable item) {
-        if (items.size() < capacidaMaxima) {
+        if (items.size() < capacidadMaxima) {
             items.add(item);
             item.registrar();
             return true;

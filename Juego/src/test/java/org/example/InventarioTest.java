@@ -48,7 +48,7 @@ class InventarioTest {
 
     @Test
     void testGetItemsYCapacidad() {
-        assertEquals(2, inventario.getCapacidaMaxima(), "Capacidad máxima debe ser 2");
+        assertEquals(2, inventario.getCapacidadMaxima(), "Capacidad máxima debe ser 2");
         assertTrue(inventario.getItems().isEmpty(), "Inicialmente la lista de items debe estar vacía");
 
         inventario.agregarItem(arma1);
